@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wordle</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="game-container">
+        <h1>Wordle</h1>
+        <div class="grid">
+            <!-- 6 rows x 5 letters per row -->
+            <div id="row1" class="row"></div>
+            <div id="row2" class="row"></div>
+            <div id="row3" class="row"></div>
+            <div id="row4" class="row"></div>
+            <div id="row5" class="row"></div>
+            <div id="row6" class="row"></div>
+        </div>
+        <div class="keyboard">
+            <button onclick="pressKey('Q')">Q</button>
+            <button onclick="pressKey('W')">W</button>
+            <button onclick="pressKey('E')">E</button>
+            <button onclick="pressKey('R')">R</button>
+            <button onclick="pressKey('T')">T</button>
+            <button onclick="pressKey('Y')">Y</button>
+            <button onclick="pressKey('U')">U</button>
+            <button onclick="pressKey('I')">I</button>
+            <button onclick="pressKey('O')">O</button>
+            <button onclick="pressKey('P')">P</button>
+            <button onclick="deleteLetter()">←</button>
+            <button onclick="submitWord()">Enter</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
